@@ -6,7 +6,11 @@
     --white: #FFF;
     --black: #121212;
     --gray: #d9d9d9;
+    --gray-dark: #9d9d9d;
+    --gray-light: #f0f0f0;
     --bg-light: #e7f0f9;
+    --bg-footer: #160120;
+    --text-footer: #8a6a9b;
 }
 * {
     font-family: "Poppins", sans-serif;
@@ -43,11 +47,33 @@
 .bg-gray {
     background-color: var(--gray);
 }
+.bg-gray-light {
+    background-color: var(--gray-light);
+}
 .bg-transparent {
     background-color: transparent !important;
 }
 .bg-light {
     background-color: var(--bg-light) !important;
+}
+.bg-footer {
+    background-color: var(--bg-footer);
+}
+.bg-text {
+    position: absolute;
+    font-size: 5em;
+    font-weight: 900;
+    -webkit-text-stroke: 1.5px var(--gray);
+    -webkit-text-fill-color: transparent;
+    opacity: 0.3;
+    z-index: 0;
+    top: -10px;    
+    @media only screen and (max-width: 1200px) {
+        font-size: 4em;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 3em !important;
+    }
 }
 .text-secondary {
     color: var(--secondary) !important;
@@ -61,6 +87,15 @@
 .text-gray {
     color: var(--gray);
 }
+.text-footer {
+    color: var(--text-footer);
+}
+.text-gray-dark {
+    color: var(--gray-dark);
+}
+.shadow {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 
 /* Typography */
 .font-sm {
@@ -70,7 +105,7 @@
     font-size: 12px;
 }
 .font-2xs {
-    font-size: 10px;
+    font-size: 10px !important;
 }
 
 /* Buttons */
@@ -82,11 +117,41 @@
 .max-w-fit {
     max-width: fit-content;
 }
+.max-h-fit {
+    max-height: fit-content;
+}
 .rounded-sm {
     border-radius: 3px !important;
 }
 .max-w-hero {
     max-width: 580px;
+}
+.skewed_button {
+    width: 150px;
+    height: 52px;
+    background: transparent;
+    text-decoration: none;
+    padding-left: 40px;
+    padding-right: 20px;
+    overflow-y: hidden;
+    color: var(--white);
+}
+.skewed_button::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    height: 60px;
+    background-color: var(--primary);
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.skewed_button:hover {
+    color: var(--black);
+}
+.skewed_button:hover::before {
+    background-color: var(--secondary);
 }
 
 /* Hero */
@@ -112,6 +177,36 @@
     width: 320px;
     max-width: 100%;
 }
+.hero-search-results {
+    top: calc(100% + 10px);
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -8px;
+        left: 30px;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent white transparent;
+    }
+    li {
+        cursor: pointer;
+    }
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+.hero-search:focus-within .hero-search-results {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
 
 /* Tours Section */
 .tour-card {
@@ -133,4 +228,104 @@
     background-position: center;
     background-size: cover;
 }
-  
+
+/* Package Section */
+.package-card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.package-card__preview {
+    height: 220px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Affiliation section */
+.affiliatied-with-box {
+    height: 60px;
+    width: 80px;
+}
+.affiliation-feature-box {
+    &:nth-child(odd) {
+        top: -8px;
+    }
+    &:nth-child(even) {
+        top: 8px;
+    }
+    @media only screen and (max-width: 768px) {
+        top: 0 !important;
+    }
+}
+
+/* Review Section */
+.bg-review {
+    background-image: url('https://ascentdescentadventures.com/wp-content/uploads/2023/05/Kanchenjunga-Indian-Himalayas-jpg.webp');
+    background-position: center;
+    background-size: cover;    
+}
+.review-title {
+    font-size: 5em;
+    font-weight: 900;
+    -webkit-text-stroke: 1.5px white;
+    -webkit-text-fill-color: transparent;
+}
+.review-video {
+    height: 320px !important;
+    &::after {
+        content: '';
+        background-color: var(--primary-light);
+        width: 110%;
+        position: absolute;
+        top: 80%;
+        opacity: 0.5;
+        height: 100%;
+        transform: skew(5deg, 5deg);
+    }
+}
+.bg-review-videos {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 0;
+    }
+}
+.review-card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.review-card__preview {
+    width: 30%;
+    max-width: 120px;
+    min-width: 120px;
+    height: 150px;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.review-card__preview_quote {
+    top: -15px;
+}
+
+/* Footer Section */
+.footer-section {
+    border-bottom: 2px solid rgba(138, 106, 155, 0.2);
+    &:first-child {
+        border-right: 2px solid rgba(138, 106, 155, 0.2);
+    }
+}
+.social-link {
+    height: 30px;
+    width: 30px;
+}
+.footer-link {
+    &:hover a{
+        color: var(--white) !important;
+    }
+}
+.footer-mail {
+    max-width: 280px;
+}
