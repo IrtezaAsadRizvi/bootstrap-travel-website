@@ -1,0 +1,136 @@
+:root {
+    --secondary: #ff7903;
+    --primary: #0a6bc4;
+    --primary-light: #219dee;
+    --primary-dark: #0a2540;
+    --white: #FFF;
+    --black: #121212;
+    --gray: #d9d9d9;
+    --bg-light: #e7f0f9;
+}
+* {
+    font-family: "Poppins", sans-serif;
+}
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1400px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .visible-in-web {
+      display: none !important;
+    }
+  }
+  @media only screen and (min-width: 769px) {
+    .visible-in-mobile {
+      display: none !important;
+    }
+  }
+
+/* Backgrounds */
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+.bg-primary-light {
+    background-color: var(--primary-light);
+}
+.bg-primary-dark {
+    background-color: var(--primary-dark);
+}
+.bg-gray {
+    background-color: var(--gray);
+}
+.bg-transparent {
+    background-color: transparent !important;
+}
+.bg-light {
+    background-color: var(--bg-light) !important;
+}
+.text-secondary {
+    color: var(--secondary) !important;
+}
+.text-black {
+    color: var(--black) !important;
+}
+.text-white {
+    color: var(--white);
+}
+.text-gray {
+    color: var(--gray);
+}
+
+/* Typography */
+.font-sm {
+    font-size: 14px;
+}
+.font-xs {
+    font-size: 12px;
+}
+.font-2xs {
+    font-size: 10px;
+}
+
+/* Buttons */
+
+/* Size & Spacing */
+.min-w-max {
+    min-width: max-content;
+}
+.max-w-fit {
+    max-width: fit-content;
+}
+.rounded-sm {
+    border-radius: 3px !important;
+}
+.max-w-hero {
+    max-width: 580px;
+}
+
+/* Hero */
+.bg-hero {
+    background-image: url('https://www.summitclimb.com/images/sliders/slider1588593625_summitclimb-expedition.jpg');
+    background-position: center;
+    background-size: cover;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 0;
+    }
+}
+.p-hero {
+    padding: 100px 20px;
+}
+.hero-search {
+    width: 320px;
+    max-width: 100%;
+}
+
+/* Tours Section */
+.tour-card {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 0;
+    }
+}
+.service-card__preview {
+    width: 55%;
+    max-width: 55%;
+    height: 120px;    
+    background-position: center;
+    background-size: cover;
+}
+  

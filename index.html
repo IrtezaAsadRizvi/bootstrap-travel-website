@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="container-fluid">
+        <div class="row visible-in-web">
+            <div
+                class="col-md-2 col-3 d-flex justify-content-center align-items-center p-1 bg-secondary text-white fw-semibold font-sm">
+                Notification Bar Tag</div>
+            <div
+                class="col-md-10 col-9 d-flex justify-content-between align-items-center bg-primary-dark text-white px-3 py-1">
+                <p class="flex-grow-1 m-0 font-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, illo
+                    nemo
+                    dolorem numquam dolorum placeat accusamus commodi eos blanditiis cum, asperiores est repudiandae
+                    quia neque
+                    recusandae nisi sed assumenda dolor?</p>
+                <button class="btn btn-light min-w-max font-xs mx-4 px-3 py-2 rounded-sm">View More &nbsp; <i
+                        class="d-inline-block" data-feather="arrow-right" width="16" height="16"></i></button>
+                <div><i data-feather="x-circle" width="20" height="20"></i></div>
+            </div>
+        </div>
+        <div class="row">
+            <div
+                class="col-md-2 col-3 d-flex justify-content-center align-items-center p-1 bg-gray text-white fw-semibold py-4 visible-in-web">
+                <img src="./assets/youtube_logo.png" class="w-50" alt="youtube">
+            </div>
+            <div class="col-md-10 col-12 d-flex flex-column p-0">
+                <div class="d-flex align-content-center justify-content-between w-100 bg-primary px-3 py-2">
+                    <p
+                        class="d-flex justify-content-start align-items-center m-0 font-2xs fw-semibold text-white gap-2">
+                        <span class="d-flex align-items-center gap-1"><i class="d-inline-block" data-feather="send"
+                                width="16" height="16"></i> <span>info.himalayanleisure.com</span></span>
+                        <span class="d-flex align-items-center gap-1"><i class="d-inline-block" data-feather="phone"
+                                width="16" height="16"></i> <span>+977 98510 99 000</span></span>
+                    </p>
+                    <div class="d-flex align-items-center gap-2 text-white">
+                        <i class="d-inline-block" data-feather="phone" width="16" height="16"></i>
+                        <button class="btn bg-transparent text-white p-0">
+                            <span class="font-xs fw-semibold">USD</span>
+                            <i class="d-inline-block" data-feather="chevron-down" width="16" height="16"></i>
+                        </button>
+                        <i class="d-inline-block" data-feather="user" width="16" height="16"></i>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary flex-grow-1">
+                    <div class="container-fluid">
+                        <a class="navbar-brand font-xs fw-semibold text-black d-flex align-items-center gap-xs"
+                            href="#">
+                            <i class="d-inline-block" data-feather="home" width="16" height="16"></i> &nbsp; Home
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav gap-3">
+                                <li class="nav-item d-flex align-items-center">
+                                    <a class="nav-link p-1 font-xs fw-semibold text-black" href="#">Destinations</a>
+                                    <i class="d-inline-block" data-feather="chevron-down" width="16" height="16"></i>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <a class="nav-link p-1 font-xs fw-semibold text-black" href="#">Activities</a>
+                                    <i class="d-inline-block" data-feather="chevron-down" width="16" height="16"></i>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <a class="nav-link p-1 font-xs fw-semibold text-black" href="#">Support</a>
+                                    <i class="d-inline-block" data-feather="chevron-down" width="16" height="16"></i>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <a class="nav-link p-1 font-xs fw-semibold text-black" href="#">Blogs</a>
+                                </li>
+                                <li class="nav-item d-flex align-items-center">
+                                    <a class="nav-link p-1 font-xs fw-semibold text-black" href="#">Contract</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <button class="btn min-w-max font-xs px-3 py-2 rounded-sm bg-primary text-white">Manual
+                                Deposit &nbsp; <i class="d-inline-block" data-feather="arrow-right" width="16"
+                                    height="16"></i></button>
+                            <button class="btn btn-dark min-w-max font-xs px-1 py-1 text-white rounded-1"><i
+                                    class="d-inline-block" data-feather="menu" width="24" height="24"></i></button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid p-hero d-flex justify-content-center align-items-center gap-5 flex-column bg-hero text-white position-relative">
+        <div class="d-flex flex-column justify-content-center align-items-center gap-2 z-1">
+            <h1 class="d-flex justify-content-center align-items-center flex-column fw-bolder fs-1">
+                <span>Next Adventure</span> 
+                <span class="text-secondary">Is Waiting</span>
+            </h1>
+            <p class="fs-6 lh-base max-w-hero mx-auto text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laboriosam quae tenetur labore accusantium sit nihil animi.</p>
+        </div>
+        <div class="z-1 position-relative">
+            <div class="input-group mb-3 hero-search mb-5">
+                <span class="input-group-text bg-white text-gray p-3 border-0" id="basic-addon1">
+                    <i class="d-inline-block" data-feather="search" width="24" height="24"></i>
+                </span>
+                <input type="text" class="form-control border-0 font-sm py-3 px-0" placeholder="Enter your keywords..." aria-label="key" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <button class="btn bg-transparent text-white position-absolute bottom-0 end-0 p-3 z-1">
+            <i class="d-inline-block" data-feather="play-circle" width="32" height="32"></i>
+        </button>
+        <div class="btn bg-transparent text-white position-absolute bottom-0 start-0 p-3 z-1">
+            <p class="m-0 text-white py-1 px-2 d-flex align-items-center max-w-fit d-inline-block bg-primary rounded-sm font-xs">
+                <i class="d-inline-block" data-feather="thumbs-up" width="16" height="16"></i> &nbsp; Handshake with us for the bes services!
+            </p>
+        </div>
+    </section>
+    <section class="container py-3">
+        <div class="row">
+            <div class="col-md-3 d-flex flex-column justify-content-center py-3 mb-2">
+                <h3 class="text-secondary fw-bold fs-6">CHECKOUT</h3>
+                <p class="fw-bold font-sm">Spectacular Destinations</p>
+                <p class="fw-light font-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi enim perferendis numquam a debitis cum accusantium assumenda nemo voluptates. Soluta voluptate quos consectetur animi obcaecati doloremque esse voluptatem in reprehenderit!</p>
+                <button class="btn min-w-max max-w-fit font-xs px-3 py-2 rounded-sm bg-primary text-white">View More &nbsp; <i class="d-inline-block" data-feather="arrow-right" width="16"
+                        height="16"></i></button>
+            </div>
+            <div class="col-md-3 p-2">
+                <div class="position-relative d-flex overflow-hidden justify-content-center align-items-center flex-column w-100 h-100 text-white py-5 px-2 gap-5 rounded-1 tour-card" 
+                    style="background-image: url('https://thumbs.dreamstime.com/b/annapurna-south-peak-glowing-sunrise-himalayas-brilliantly-nepal-capturing-breathtaking-beauty-majestic-presence-357485241.jpg');">
+                    <p class="z-1">Tibet</p>
+                    <p class="z-1 font-sm text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi enim perferendis numquam a debitis.</p>
+                    <button class="z-1 btn min-w-max font-xs px-3 py-2 rounded-sm bg-primary text-white">07 Tours</button>
+                </div>
+            </div>
+            <div class="col-md-3 p-2">
+                <div class="position-relative d-flex overflow-hidden justify-content-center align-items-center flex-column w-100 h-100 text-white py-5 px-2 gap-5 rounded-1 tour-card" 
+                    style="background-image: url('https://images.csmonitor.com/csm/2019/11/UMOUNTAIN.jpg?alias=standard_900x600');">
+                    <p class="z-1">Tibet</p>
+                    <p class="z-1 font-sm text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi enim perferendis numquam a debitis.</p>
+                    <button class="z-1 btn min-w-max font-xs px-3 py-2 rounded-sm bg-primary text-white">07 Tours</button>
+                </div>
+            </div>
+            <div class="col-md-3 p-2">
+                <div class="position-relative d-flex overflow-hidden justify-content-center align-items-center flex-column w-100 h-100 text-white py-5 px-2 gap-5 rounded-1 tour-card" 
+                    style="background-image: url('https://i0.wp.com/eos.org/wp-content/uploads/2020/07/zanskar-glacier.jpg?fit=820%2C615&ssl=1');">
+                    <p class="z-1">Tibet</p>
+                    <p class="z-1 font-sm text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi enim perferendis numquam a debitis.</p>
+                    <button class="z-1 btn min-w-max font-xs px-3 py-2 rounded-sm bg-primary text-white">07 Tours</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid bg-light">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-3 p-2">
+                    <div class="service-card d-flex rounded-2 overflow-hidden">
+                        <div class="service-card__preview"
+                            style="background-image: url('https://i0.wp.com/eos.org/wp-content/uploads/2020/07/zanskar-glacier.jpg?fit=820%2C615&ssl=1');">
+    
+                        </div>
+                        <div class="d-flex flex-column gap-2 px-3 justify-content-center bg-white flex-grow-1">
+                            <p class="m-0 font-sm fw-medium">Trekking</p>
+                            <p class="m-0 font-sm">13 Tours</p>
+                            <p class="m-0 font-xs">18 reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-2">
+                    <div class="service-card d-flex rounded-2 overflow-hidden">
+                        <div class="service-card__preview"
+                            style="background-image: url('https://images.csmonitor.com/csm/2019/11/UMOUNTAIN.jpg?alias=standard_900x600');">
+    
+                        </div>
+                        <div class="d-flex flex-column gap-2 px-3 justify-content-center bg-white flex-grow-1">
+                            <p class="m-0 font-sm fw-medium">Trekking</p>
+                            <p class="m-0 font-sm">13 Tours</p>
+                            <p class="m-0 font-xs">18 reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-2">
+                    <div class="service-card d-flex rounded-2 overflow-hidden">
+                        <div class="service-card__preview"
+                            style="background-image: url('https://thumbs.dreamstime.com/b/annapurna-south-peak-glowing-sunrise-himalayas-brilliantly-nepal-capturing-breathtaking-beauty-majestic-presence-357485241.jpg');">
+    
+                        </div>
+                        <div class="d-flex flex-column gap-2 px-3 justify-content-center bg-white flex-grow-1">
+                            <p class="m-0 font-sm fw-medium">Trekking</p>
+                            <p class="m-0 font-sm">13 Tours</p>
+                            <p class="m-0 font-xs">18 reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-2">
+                    <div class="service-card d-flex rounded-2 overflow-hidden">
+                        <div class="service-card__preview"
+                            style="background-image: url('https://images.csmonitor.com/csm/2019/11/UMOUNTAIN.jpg?alias=standard_900x600');">
+    
+                        </div>
+                        <div class="d-flex flex-column gap-2 px-3 justify-content-center bg-white flex-grow-1">
+                            <p class="m-0 font-sm fw-medium">Trekking</p>
+                            <p class="m-0 font-sm">13 Tours</p>
+                            <p class="m-0 font-xs">18 reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-2">
+                    <div class="service-card d-flex rounded-2 overflow-hidden">
+                        <div class="service-card__preview"
+                            style="background-image: url('https://thumbs.dreamstime.com/b/annapurna-south-peak-glowing-sunrise-himalayas-brilliantly-nepal-capturing-breathtaking-beauty-majestic-presence-357485241.jpg');">
+    
+                        </div>
+                        <div class="d-flex flex-column gap-2 px-3 justify-content-center bg-white flex-grow-1">
+                            <p class="m-0 font-sm fw-medium">Trekking</p>
+                            <p class="m-0 font-sm">13 Tours</p>
+                            <p class="m-0 font-xs">18 reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-2">
+                    <div class="service-card d-flex rounded-2 overflow-hidden">
+                        <div class="service-card__preview"
+                            style="background-image: url('https://i0.wp.com/eos.org/wp-content/uploads/2020/07/zanskar-glacier.jpg?fit=820%2C615&ssl=1');">
+    
+                        </div>
+                        <div class="d-flex flex-column gap-2 px-3 justify-content-center bg-white flex-grow-1">
+                            <p class="m-0 font-sm fw-medium">Trekking</p>
+                            <p class="m-0 font-sm">13 Tours</p>
+                            <p class="m-0 font-xs">18 reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-2">
+                    <div class="service-card d-flex rounded-2 overflow-hidden">
+                        <div class="service-card__preview"
+                            style="background-image: url('https://images.csmonitor.com/csm/2019/11/UMOUNTAIN.jpg?alias=standard_900x600');">
+    
+                        </div>
+                        <div class="d-flex flex-column gap-2 px-3 justify-content-center bg-white flex-grow-1">
+                            <p class="m-0 font-sm fw-medium">Trekking</p>
+                            <p class="m-0 font-sm">13 Tours</p>
+                            <p class="m-0 font-xs">18 reviews</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-2">
+                    <div class="service-card d-flex rounded-2 overflow-hidden">
+                        <div class="service-card__preview"
+                            style="background-image: url('https://thumbs.dreamstime.com/b/annapurna-south-peak-glowing-sunrise-himalayas-brilliantly-nepal-capturing-breathtaking-beauty-majestic-presence-357485241.jpg');">
+    
+                        </div>
+                        <div class="d-flex flex-column gap-2 px-3 justify-content-center bg-white flex-grow-1">
+                            <p class="m-0 font-sm fw-medium">Trekking</p>
+                            <p class="m-0 font-sm">13 Tours</p>
+                            <p class="m-0 font-xs">18 reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 my-5 text-center">
+        <p>Text me for other sections.</p>
+        <p class="text-secondary fw-medium fs-4">Or visit <a href="https://www.freelancer.com/u/TezaSoft" target="_blank"><strong>My Freelancer Page</strong></a></p>
+        <p class="text-primary fw-medium fs-4"><a href="https://irteza-asad.web.app/" target="_blank"><strong>My Portfolio</strong></a></p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
